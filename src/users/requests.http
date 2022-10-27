@@ -1,0 +1,25 @@
+### Create new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "shelly@tester.com",
+  "password": "password" 
+}
+
+### Find a certain user
+GET http://localhost:3000/auth/1
+
+### Find all users 
+GET http://localhost:3000/auth?email=shelly@tester.com
+
+### Remove user
+DELETE http://localhost:3000/auth/5
+
+### Update a user
+PATCH  http://localhost:3000/auth/1
+Content-Type: application/json
+
+{
+  "password": "password2" 
+}
