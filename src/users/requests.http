@@ -3,8 +3,17 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-  "email": "shelly@tester.com",
+  "email": "adam@tester.com",
   "password": "password" 
+}
+
+### Signin user
+POST http://localhost:3000/auth/Signin
+Content-Type: application/json
+
+{
+  "email": "adam@tester.com",
+  "password": "password"
 }
 
 ### Find a certain user
